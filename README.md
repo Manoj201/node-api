@@ -22,4 +22,4 @@ NodeJS REST api using Sequelize ORM , Express Js  With ES6 Features
 Please respect the Lint rules defined in .eslintrc and the general directory structure.
 
 ## Authors
-* **Manoj Gamachchige ** - [mthahzan](https://github.com/manoj201/)
+* **Manoj Gamachchige ** - [Manoj Gamachchige](https://github.com/manoj201/)
