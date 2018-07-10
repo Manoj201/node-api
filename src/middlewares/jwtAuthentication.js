@@ -1,7 +1,7 @@
 'use strict';
 
 const setUpPassport = (req, res, next) => {
-  console.log('#####################');
+  console.log('#####################', req);
   next();
 };
 
