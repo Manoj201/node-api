@@ -1,34 +1,36 @@
 {
   "env": {
       "es6": true,
-      "node": true
+      "node": true,
+      "browser": true
   },
-  "extends": "eslint:recommended",
+  "ecmaFeatures": {
+    "modules": true
+  },
+  "extends": ["eslint:recommended", "google"],
+  "globals": {
+    "require": false
+  },
+  "parser": "babel-eslint",
   "parserOptions": {
       "sourceType": "module",
       "ecmaFeatures": {
         "experimentalObjectRestSpread": true
       }
   },
+  "plugins": [
+    "babel"
+  ],
   "rules": {
-      "indent": [
-          "error",
-          2
-      ],
-      "linebreak-style": [
-          "error",
-          "unix"
-      ],
-      "quotes": [
-          "error",
-          "single"
-      ],
-      "semi": [
-          "error",
-          "always"
-      ],
+      "indent": ["error",2],
+      "linebreak-style": ["error","unix"],
+      "quotes": ["error","single"],
+      "semi": ["error","always"],
       "no-multi-spaces": [2, {"exceptions": {"VariableDeclaration": true}}],
-      "experimentalObjectRestSpread": true
+      "experimentalObjectRestSpread": true,
+      "new-cap": 0,
+      "max-len": [2, {"code": 120, "ignoreTrailingComments": true}],
+      "no-undef": 2
   }
   
 }
