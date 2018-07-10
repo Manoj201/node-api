@@ -3,22 +3,16 @@
 import HTTPStatus from 'http-status-codes';
 
 const errorParser = {
-  jsonifyError: (error, traceId) => {
-    var formattedError = {};
-
-    formattedError.status = httpStatusForError(error);
-    formattedError.message = error.message || formattedError.message;
-    formattedError.errors = error.errors || [];
-    formattedError.traceId = traceId;
-
-    return formattedError;
-  }
-};
-
-const httpStatusForError = (error) => {
-  var httpStatusCode = HTTPStatus.INTERNAL_SERVER_ERROR;
-
-  return httpStatusCode;
+  unAuthorized: (traceId, error) => ({
+    status: HTTPStatus.FORBIDDEN,
+    message: 'User Unauthorized',
+    error: error || {},
+  }),
+  internalServerError: (traceId, error) => ({
+    status: HTTPStatus.FORBIDDEN,
+    message: 'Internal Server Error',
+    error: error || {},
+  }),
 };
 
 export default errorParser;

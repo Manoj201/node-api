@@ -21,8 +21,9 @@ const registerApi = (sdpApp) => {
 
 const registerGlobalErrorHandler = (sdpApp) => {
   sdpApp.use((err, req, res, next) => {
-    logger.error({err}, {token: req.traceId});
-    res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(errorParser.jsonifyError(err, req.traceId));
+    const error = errorParser.internalServerError(req.traceId, err);
+    logger.error(error, {token: req.traceId});
+    res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(error);
   });
 };
 

@@ -1,21 +1,9 @@
 {"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":{}}
 {"message":"SDP API started and listening on port 3000","level":"info"}
 {"level":"error","message":{"err":{}}}
 {"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":{}}
 {"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":{"status":403,"message":"Internal Server Error","error":{}}}
 {"message":"SDP API started and listening on port 3000","level":"info"}
