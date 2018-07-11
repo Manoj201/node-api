@@ -2,7 +2,6 @@
 
 import express from 'express';
 
-import authenticate from '../../middlewares/authenticate';
 import {userOperations} from '../controllers';
 
 const router = express.Router();

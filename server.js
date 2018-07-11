@@ -4,7 +4,7 @@ import express from 'express';
 import HttpStatus from 'http-status-codes';
 import Promise from 'bluebird';
 
-import {userRoutes} from './src/v1/routers';
+import {authenticateRoutes, userRoutes} from './src/v1/routers';
 import init from './src/config/init';
 import config from './src/config/appConfig';
 import logger from './src/util/loger';
@@ -16,6 +16,7 @@ const sdpApp = express();
 sdpApp.listenAsync = Promise.promisify(sdpApp.listen).bind(sdpApp);
 
 const registerApi = (sdpApp) => {
+  authenticateRoutes(sdpApp);
   userRoutes(sdpApp);
 };
 

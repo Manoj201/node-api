@@ -12,14 +12,14 @@ const loger = winston.createLogger({
       handleExceptions: true,
       json: false,
       maxsize: 5242880, //5MB
-      colorize: false
+      colorize: false,
     }),
-  ]
+  ],
 });
 
 if (process.env.NODE_ENV !== 'production') {
   loger.add(new winston.transports.Console({
-    format: winston.format.simple()
+    format: winston.format.simple(),
   }));
 }
 
