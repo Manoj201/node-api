@@ -4,7 +4,7 @@ import HTTPStatus from 'http-status-codes';
 
 const errorParser = {
   unAuthorized: (traceId, error) => ({
-    status: HTTPStatus.FORBIDDEN,
+    status: HTTPStatus.UNAUTHORIZED,
     message: 'User Unauthorized',
     error: error || {},
   }),

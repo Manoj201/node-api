@@ -22,3 +22,4 @@
 {"level":"error","message":{"status":403,"message":"Internal Server Error","error":{"error":"fuck"}}}
 {"message":"SDP API started and listening on port 3000","level":"info"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
