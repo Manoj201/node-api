@@ -21,7 +21,7 @@ const authenticate = async (email, password) => {
       userObj.id= user.id;
       userObj.name= user.name;
       result.user = userObj;
-      result.token = jwt.sign({email, id: user.id}, 'Fuck You', {expiresIn: 3600});
+      result.token = jwt.sign({email, id: user.id}, 'Fuck_You', {expiresIn: 86400});
     }
   }
   return result;

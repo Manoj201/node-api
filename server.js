@@ -9,7 +9,6 @@ import init from './src/config/init';
 import config from './src/config/appConfig';
 import logger from './src/util/loger';
 import models from './src/models';
-import errorParser from './src/util/errorParser';
 import middlewares from './src/middlewares';
 
 const sdpApp = express();
@@ -22,9 +21,8 @@ const registerApi = (sdpApp) => {
 
 const registerGlobalErrorHandler = (sdpApp) => {
   sdpApp.use((err, req, res, next) => {
-    const error = errorParser.internalServerError(req.traceId, err);
-    logger.error(error, {token: req.traceId});
-    res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(error);
+    logger.error(err.message || err, {token: req.traceId});
+    res.status(err.status || HttpStatus.INTERNAL_SERVER_ERROR).json(err);
   });
 };
 

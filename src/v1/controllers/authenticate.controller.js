@@ -2,7 +2,7 @@
 import HttpStatus from 'http-status-codes';
 
 import {authenticateService} from '../servicess';
-import errorFactory from '../../util/errorParser';
+import errorFactory from '../../util/errorFactory';
 
 const authenticateOperation = {
   autenticate: async (req, res, next) => {
