@@ -23,7 +23,8 @@ const registerApi = (sdpApp) => {
 const registerGlobalErrorHandler = (sdpApp) => {
   sdpApp.use((err, req, res, next) => {
     logger.error(err.message || err, {token: req.traceId});
-    res.status(err.status || HttpStatus.INTERNAL_SERVER_ERROR).json(errorFactory.internalServerError(req.traceId, err));
+    res.status(err.status || HttpStatus.INTERNAL_SERVER_ERROR)
+      .json(err || errorFactory.internalServerError(req.traceId, err));
   });
 };
 

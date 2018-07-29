@@ -10,22 +10,21 @@ module.exports = {
         name: 'admin',
         email: 'admin@sdp.com',
         password: bcrypt.hashSync('admin@123', saltRounds),
+        roleId: 1,
         createdAt: now,
-        updatedAt: now
+        updatedAt: now,
       },
       {
         name: 'manoj',
         email: 'manoj@sdp.com',
         password: bcrypt.hashSync('manoj@123', saltRounds),
+        roleId: 2,
         createdAt: now,
-        updatedAt: now
+        updatedAt: now,
       },
     ], {});
   },
 
   down: (queryInterface, Sequelize) => {
-  }
+  },
 };
-
-
-

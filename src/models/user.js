@@ -22,7 +22,9 @@ module.exports = (sequelize, DataTypes) => {
 
   }, {});
   user.associate = (models) => {
-    // associations can be defined here
+    user.belongsTo(models.role,
+      {foreignKey: {name: 'roleId'}}
+    );
   };
   return user;
 };

@@ -23,6 +23,21 @@ const userOperations = {
       next(error);
     }
   },
+  create: async (req, res, next) => {
+    try {
+      const userData = {
+        name: req.body.name,
+        email: req.body.email,
+        password: req.body.password,
+        roleId: req.body.roleId,
+      };
+      const data = await userService.create(userData);
+      data.status === HttpStatus.CREATED ?
+        res.status(HttpStatus.CREATED).json(data.result) : next(errorFactory.conflict(req.traceId));
+    } catch (error) {
+      next(error);
+    }
+  },
 };
 
 export default userOperations;

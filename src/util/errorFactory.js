@@ -18,6 +18,11 @@ const errorFactory = {
     message: 'Not Found',
     error: error || {},
   }),
+  conflict: (traceId, error) => ({
+    status: HTTPStatus.CONFLICT,
+    message: 'Exist',
+    error: error || {},
+  }),
 };
 
 export default errorFactory;
