@@ -8,6 +8,7 @@ import {authenticateRoutes, userRoutes} from './src/v1/routers';
 import init from './src/config/init';
 import config from './src/config/appConfig';
 import logger from './src/util/loger';
+import errorFactory from './src/util/errorFactory';
 import models from './src/models';
 import middlewares from './src/middlewares';
 
@@ -22,7 +23,7 @@ const registerApi = (sdpApp) => {
 const registerGlobalErrorHandler = (sdpApp) => {
   sdpApp.use((err, req, res, next) => {
     logger.error(err.message || err, {token: req.traceId});
-    res.status(err.status || HttpStatus.INTERNAL_SERVER_ERROR).json(err);
+    res.status(err.status || HttpStatus.INTERNAL_SERVER_ERROR).json(errorFactory.internalServerError(req.traceId, err));
   });
 };
 

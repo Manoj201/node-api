@@ -1,20 +1,12 @@
 {"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"User Unauthorized"}
-{"level":"error","message":"invalid signature"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":{"status":403,"message":"Internal Server Error","error":{"status":404,"message":"Not Found","error":{}}}}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":{"status":404,"message":"Not Found","error":{}}}
-{"message":"SDP API started and listening on port 3000","level":"info"}
-{"level":"error","message":"Not Found"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
 {"level":"error","message":"i is not defined"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
 {"level":"error","message":"i is not defined"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
 {"level":"error","message":"i is not defined"}
-{"message":"SDP API started and listening on port 3000","level":"info"}
 {"level":"error","message":"i is not defined"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"jwt expired"}
+{"level":"error","message":"jwt expired"}
+{"level":"error","message":"jwt expired"}
+{"level":"error","message":"jwt expired"}
