@@ -8,7 +8,7 @@ const userOperations = {
 
   getById: async (req, res, next) => {
     try {
-      const data = await userService.findById(req.params.id);
+      const data = await userService.getById(req.params.id);
       data ? res.status(HttpStatus.OK).json(data) : next(errorFactory.notFound(req.traceId));
     } catch (error) {
       next(error);

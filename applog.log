@@ -31,3 +31,9 @@
 {"level":"error","message":"jwt expired"}
 {"level":"error","message":"jwt expired"}
 {"level":"error","message":"jwt expired"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"jwt expired"}
+{"level":"error","message":"_servicess.userService.findById is not a function"}
+{"level":"error","message":"_servicess.userService.findById is not a function"}
+{"level":"error","message":"_servicess.userService.findById is not a function"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
