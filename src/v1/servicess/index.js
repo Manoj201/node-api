@@ -1,5 +1,5 @@
 'use strict';
-import userService from './user/user.service';
+import userService from './user';
 import authenticateService from '../servicess/authenticate.service';
 
 export {

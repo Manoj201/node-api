@@ -27,3 +27,7 @@
 {"level":"error","message":"Exist"}
 {"message":"SDP API started and listening on port 3000","level":"info"}
 {"level":"error","message":"Exist"}
+{"message":"SDP API started and listening on port 3000","level":"info"}
+{"level":"error","message":"jwt expired"}
+{"level":"error","message":"jwt expired"}
+{"level":"error","message":"jwt expired"}
